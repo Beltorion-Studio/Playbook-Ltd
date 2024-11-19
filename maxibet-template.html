@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+    <!--[if !mso]><!-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:400,600|Passero+One&display=swap:400"
+      rel="stylesheet"
+    />
+    <!--<![endif]-->
+    <title>MaxiBet Email</title>
+    <style type="text/css">
+      /* Fallback fonts for email clients that don't support web fonts */
+      @media screen {
+        @font-face {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Inter Regular'), local('Inter-Regular');
+        }
+        @font-face {
+          font-family: 'Passero One', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          src: local('Passero One Regular'), local('Passero-One-Regular');
+        }
+      }
+      /* Mobile styles */
+      @media only screen and (max-device-width: 479px) {
+        body {
+          background-color: #ffffff !important;
+        }
+        table {
+          background-color: #ffffff !important;
+        }
+      }
+      /* Outlook-specific styles */
+      [owa] .img-container {
+        width: 600px !important;
+      }
+      [owa] .button {
+        width: auto !important;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    "
+  >
+    <!-- Preview Text -->
+    <div
+      style="
+        display: none;
+        font-size: 1px;
+        color: #e8e8e8;
+        line-height: 1px;
+        max-height: 0px;
+        max-width: 0px;
+        opacity: 0;
+        overflow: hidden;
+      "
+    >
+      {{Preheader}}
+    </div>
+    <!-- Outer Table for Background -->
+    <table
+      role="presentation"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      width="100%"
+      style="background-color: #FA671E"
+    >
+      <tr>
+        <td>
+          <!-- Inner Table for Content -->
+          <table
+            role="presentation"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            width="100%"
+            style="max-width: 600px; margin: 0 auto"
+          >
+            <tr>
+              <td align="center" style="padding: 30px 0 40px">
+                <!-- Email Container -->
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="600"
+                  class="email-container"
+                  style="
+                    max-width: 600px;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    background-color: #ffffff;
+                  "
+                >
+                  <!-- Banner Image -->
+                  <tr>
+                    <td style="background-color: #ffffff">
+                      <a
+                        href="{{Image Destination URL}}"
+                        target="_blank"
+                        style="text-decoration: none"
+                      >
+                        <img
+                          src="{{Choose Image}}"
+                          width="600"
+                          alt=""
+                          class="responsive-banner"
+                          style="
+                            display: block;
+                            border: 0;
+                            width: 100%;
+                            max-width: 600px;
+                            height: auto;
+                          "
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Content -->
+                  <tr>
+                    <td style="padding: 40px 40px 20px; background-color: #ffffff">
+                      <h1
+                        style="
+                          margin: 0 0 20px;
+                          font-family: 'Passero One', Arial, sans-serif;
+                          font-size: 22px;
+                          line-height: 30px;
+                          color: #FA671E;
+                          text-align: center;
+                        "
+                      >
+                        {{Header}}
+                      </h1>
+                      <p
+                        style="
+                          margin: 0 0 30px;
+                          font-family: 'Inter', Arial, sans-serif;
+                          font-size: 14px;
+                          line-height: 24px;
+                          color: #18100C;
+                          text-align: center;
+                        "
+                      >
+                        {{Body}}
+                      </p>
+                      <!-- CTA Button -->
+                      <table
+                        role="presentation"
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                        align="center"
+                        style="margin: auto"
+                      >
+                        <tr>
+                          <td
+                            align="center"
+                            bgcolor="#FD8F21"
+                            style="border-radius: 22px"
+                          >
+                            <a
+                              href="{{CTA Destination URL}}"
+                              target="_blank"
+                              style="
+                                display: inline-block;
+                                padding: 12px 50px;
+                                font-family: 'Passero One', Arial, sans-serif;
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 20px;
+                                text-align: center;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                color: #18100C;
+                                border-radius: 22px;
+                              "
+                            >
+                              {{CTA}}
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Terms -->
+                      <p
+                        style="
+                          margin: 30px 0 0;
+                          font-family: 'Inter', Arial, sans-serif;
+                          font-size: 12px;
+                          line-height: 12px;
+                          color: #18100C;
+                          text-align: center;
+                        "
+                      >
+                        <a
+                          href="https://mrxbet.com/terms-conditions-2/general-2/"
+                          target="_blank"
+                          style="color: #FA671E; text-decoration: none"
+                        >
+                          Terms and conditions apply
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+                  <!-- Footer -->
+                  <tr>
+                    <td style="padding: 30px 40px; background-color: #42240D">
+                      <!-- Social Icons -->
+                      <table
+                        role="presentation"
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                        width="100%"
+                        style="background-color: #42240D !important"
+                      >
+                        <!-- Footer Text -->
+                        <tr>
+                          <td
+                            style="
+                              padding: 0;
+                              font-family: 'Inter', Arial, sans-serif;
+                              font-size: 12px;
+                              line-height: 12px;
+                              color: #ffffff;
+                              text-align: center;
+                            "
+                          >
+                            <a
+                              href="https://mrxbet.com/"
+                              target="_blank"
+                              style="color: #FD8F21
+; text-decoration: none"
+                            >
+                              mrxbet.com
+                            </a>
+                            <br /><br />
+                            Need help? Send an e-mail to
+                            <a
+                              href="mailto:support@mrxbet.com"
+                              style="color: #FD8F21; text-decoration: none"
+                            >
+                              support@tmrxbet.com
+                            </a>
+                            and we'll be happy to assist you.
+                            <br /><br />
+                            If you don't want to receive our special offers and
+                            promotions, you can
+                            <a
+                              href="[UnsubscribeURL]"
+                              style="color: #FD8F21; text-decoration: none"
+                            >
+                              click here
+                            </a>
+                            to unsubscribe.
+                            <br /><br />
+                            Copyright © MrXbet - All Rights Reserved.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
