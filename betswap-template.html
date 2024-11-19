@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+    <!--[if !mso]><!-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Montserrat:400,600"
+      rel="stylesheet"
+    />
+    <!--<![endif]-->
+    <title>Betswap Email</title>
+    <style>
+      /* Fallback fonts for email clients that don't support web fonts */
+      @media screen {
+        @font-face {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Open Sans Regular'), local('Open-Sans-Regular');
+        }
+        @font-face {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Open Sans Regular'), local('Open-Sans-Regular');
+        }
+      }
+      /* Mobile styles */
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: #ffffff !important;
+        }
+        table {
+          background-color: #ffffff !important;
+        }
+      }
+      /* Outlook-specific styles */
+      [owa] .img-container {
+        width: 600px !important;
+      }
+      [owa] .button {
+        width: auto !important;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background-color: #e8e8e8;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    "
+  >
+    <!-- Preview Text -->
+    <div
+      style="
+        display: none;
+        font-size: 1px;
+        color: #e8e8e8;
+        line-height: 1px;
+        max-height: 0px;
+        max-width: 0px;
+        opacity: 0;
+        overflow: hidden;
+      "
+    >
+      {{Preheader}}
+    </div>
+    <!-- Main Table -->
+    <table
+      role="presentation"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 20px 0;">
+          <table
+            role="presentation"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            width="600"
+            class="email-container"
+            style="
+              max-width: 600px;
+              border-radius: 8px;
+              overflow: hidden;
+              background-color: #15191C;
+            "
+          >
+            <!-- Logo -->
+            <tr>
+              <td
+                align="center"
+                style="
+                  padding: 0px 0 20px;
+                  background-color: #15191C !important;
+                  color-scheme: light;
+                  forced-color-adjust: none;
+                "
+              >
+                <a
+                  href="https://www.trybet.com"
+                  target="_blank"
+                  style="text-decoration: none"
+                >
+                  <img
+                    src="https://reactivaction.ft-crm.com/media-api/serve/100a3e57-cfd4-48e4-b8f1-a30ecfaba25a_trybet-logo-inverted.png"
+                    width="250"
+                    alt="TryBet Logo"
+                    style="
+                      display: block;
+                      border: 0;
+                      max-width: 250px;
+                      height: auto;
+                    "
+                  />
+                </a>
+              </td>
+            </tr>
+            <!-- Banner Image -->
+            <tr>
+              <td style="background-color: #ffffff">
+                <a
+                  href="{{Image Destination URL}}"
+                  target="_blank"
+                  style="text-decoration: none"
+                >
+                  <img
+                    src="{{Choose Image}}"
+                    width="600"
+                    alt=""
+                    class="responsive-banner"
+                    style="
+                      display: block;
+                      border: 0;
+                      width: 100%;
+                      max-width: 600px;
+                      height: auto;
+                    "
+                  />
+                </a>
+              </td>
+            </tr>
+            <!-- Content -->
+            <tr>
+              <td style="padding: 40px 40px 20px; background-color: #15191C">
+                <h1
+                  style="
+                    margin: 0 0 20px;
+                    font-family: 'Open Sans', Arial, sans-serif;
+                    font-size: 22px;
+                    line-height: 30px;
+                    color: #FFD800;
+                    text-align: center;
+                  "
+                >
+                  {{Header}}
+                </h1>
+                <p
+                  style="
+                    margin: 0 0 30px;
+                    font-family: 'Open Sans', Arial, sans-serif;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #ffffff;
+                    text-align: center;
+                  "
+                >
+                  {{Body}}
+                </p>
+                <!-- CTA Button -->
+                <table
+                  role="presentation"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  align="center"
+                  style="margin: auto"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      bgcolor="#FFD800"
+                      style="border-radius: 22px"
+                    >
+                      <a
+                        href="{{CTA Destination URL}}"
+                        target="_blank"
+                        style="
+                          display: inline-block;
+                          padding: 12px 50px;
+                          font-family: 'Open Sans', Arial, sans-serif;
+                          font-size: 16px;
+                          font-weight: 700;
+                          line-height: 20px;
+                          text-align: center;
+                          text-decoration: none;
+                          text-transform: uppercase;
+                          color: #15191C;
+                          border-radius: 22px;
+                        "
+                      >
+                        {{CTA}}
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+                <!-- Terms -->
+                <p
+                  style="
+                    margin: 30px 0 0;
+                    font-family: 'Open Sans', Arial, sans-serif;
+                    font-size: 12px;
+                    line-height: 12px;
+                    color: #ffffff;
+                    text-align: center;
+                  "
+                >
+                  <a
+                    href="https://betswap.gg/sports-and-casino/terms-and-conditions/"
+                    target="_blank"
+                    style="color: #ffffff; text-decoration: none"
+                  >
+                    Terms and conditions apply
+                  </a>
+                </p>
+              </td>
+            </tr>
+            <!-- Footer -->
+            <tr>
+              <td style="padding: 30px 40px; background-color: #FFD800">
+                <!-- Social Icons -->
+                <table
+                  role="presentation"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  width="100%"
+                  style="background-color: #FFD800 !important"
+                >
+                  <tr>
+                    <td align="center" style="padding-bottom: 15px">
+                      <a
+                        href="https://www.facebook.com/trybet/"
+                        target="_blank"
+                        style="display: inline-block; margin: 0 5px"
+                      >
+                        <img
+                          src="https://reactivaction.ft-crm.com/media-api/serve/ae0b1328-9d83-4d18-ad31-d3d552d96aa1_social-fb-icon-email-template.png"
+                          width="25"
+                          alt="Facebook"
+                          style="display: block; border: 0"
+                        />
+                      </a>
+                      <a
+                        href="https://www.instagram.com/trybet/"
+                        target="_blank"
+                        style="display: inline-block; margin: 0 5px"
+                      >
+                        <img
+                          src="https://reactivaction.ft-crm.com/media-api/serve/717b9923-5610-4d03-8177-a254fd81a18c_social-ig-icon-email-template.png"
+                          width="25"
+                          alt="Instagram"
+                          style="display: block; border: 0"
+                        />
+                      </a>
+                      <a
+                        href="https://twitter.com/trybet"
+                        target="_blank"
+                        style="display: inline-block; margin: 0 5px"
+                      >
+                        <img
+                          src="https://reactivaction.ft-crm.com/media-api/serve/bd8c55a4-3af0-4bab-ae2b-e6c265297db4_social-x-icon-email-template.png"
+                          width="25"
+                          alt="Twitter"
+                          style="display: block; border: 0"
+                        />
+                      </a>
+                      <a
+                        href="https://www.tiktok.com/@trybet/"
+                        target="_blank"
+                        style="display: inline-block; margin: 0 5px"
+                      >
+                        <img
+                          src="https://reactivaction.ft-crm.com/media-api/serve/8063bc4f-1311-425d-8b34-966d3a7d9764_social-tt-icon-email-template.png"
+                          width="25"
+                          alt="TikTok"
+                          style="display: block; border: 0"
+                        />
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/company/reactivaction/"
+                        target="_blank"
+                        style="display: inline-block; margin: 0 5px"
+                      >
+                        <img
+                          src="https://reactivaction.ft-crm.com/media-api/serve/99d2252b-1ae7-44fc-b832-b2665d138541_social-li-icon-email-template.png"
+                          width="25"
+                          alt="LinkedIn"
+                          style="display: block; border: 0"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Footer Text -->
+                  <tr>
+                    <td
+                      style="
+                        padding: 0;
+                        font-family: 'Open Sans', Arial, sans-serif;
+                        font-size: 12px;
+                        line-height: 12px;
+                        color: #15191C;
+                        text-align: center;
+                      "
+                    >
+                      <a
+                        href="https://betswap.gg/"
+                        target="_blank"
+                        style="color: #15191C; font-weight: 700; text-decoration: none"
+                      >
+                        betswap.gg
+                      </a>
+                      <br /><br />
+                      Need help? Send an e-mail to
+                      <a
+                        href="mailto:support@betswap.gg"
+                        style="color: #15191C; font-weight: 700; text-decoration: none"
+                      >
+                        support@betswap.gg
+                      </a>
+                      and we'll be happy to assist you.
+                      <br /><br />
+                      If you don't want to receive our special offers and
+                      promotions, you can
+                      <a
+                        href="[UnsubscribeURL]"
+                        style="color: #15191C; font-weight: 700; text-decoration: none"
+                      >
+                        click here
+                      </a>
+                      to unsubscribe.
+                      <br /><br />
+                      Copyright © Betswap - All Rights Reserved.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
