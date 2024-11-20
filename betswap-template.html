@@ -50,7 +50,7 @@
     style="
       margin: 0;
       padding: 0;
-      background-color: #e8e8e8;
+      background-color: #ffffff;
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
     "
@@ -70,285 +70,322 @@
     >
       {{Preheader}}
     </div>
-    <!-- Main Table -->
+    <!-- Outer Table for Background -->
     <table
       role="presentation"
       cellpadding="0"
       cellspacing="0"
       border="0"
       width="100%"
+      style="background-color: #ffffff"
     >
       <tr>
-        <td align="center" style="padding: 20px 0;">
+        <td>
+          <!-- Inner Table for Content -->
           <table
             role="presentation"
             cellpadding="0"
             cellspacing="0"
             border="0"
-            width="600"
-            class="email-container"
-            style="
-              max-width: 600px;
-              border-radius: 8px;
-              overflow: hidden;
-              background-color: #15191C;
-            "
+            width="100%"
+            style="max-width: 600px; margin: 0 auto"
           >
-            <!-- Logo -->
             <tr>
-              <td
-                align="center"
-                style="
-                  padding: 0px 0 20px;
-                  background-color: #15191C !important;
-                  color-scheme: light;
-                  forced-color-adjust: none;
-                "
-              >
-                <a
-                  href="https://www.trybet.com"
-                  target="_blank"
-                  style="text-decoration: none"
-                >
-                  <img
-                    src="https://reactivaction.ft-crm.com/media-api/serve/100a3e57-cfd4-48e4-b8f1-a30ecfaba25a_trybet-logo-inverted.png"
-                    width="250"
-                    alt="TryBet Logo"
-                    style="
-                      display: block;
-                      border: 0;
-                      max-width: 250px;
-                      height: auto;
-                    "
-                  />
-                </a>
-              </td>
-            </tr>
-            <!-- Banner Image -->
-            <tr>
-              <td style="background-color: #ffffff">
-                <a
-                  href="{{Image Destination URL}}"
-                  target="_blank"
-                  style="text-decoration: none"
-                >
-                  <img
-                    src="{{Choose Image}}"
-                    width="600"
-                    alt=""
-                    class="responsive-banner"
-                    style="
-                      display: block;
-                      border: 0;
-                      width: 100%;
-                      max-width: 600px;
-                      height: auto;
-                    "
-                  />
-                </a>
-              </td>
-            </tr>
-            <!-- Content -->
-            <tr>
-              <td style="padding: 40px 40px 20px; background-color: #15191C">
-                <h1
-                  style="
-                    margin: 0 0 20px;
-                    font-family: 'Open Sans', Arial, sans-serif;
-                    font-size: 22px;
-                    line-height: 30px;
-                    color: #FFD800;
-                    text-align: center;
-                  "
-                >
-                  {{Header}}
-                </h1>
-                <p
-                  style="
-                    margin: 0 0 30px;
-                    font-family: 'Open Sans', Arial, sans-serif;
-                    font-size: 16px;
-                    line-height: 24px;
-                    color: #ffffff;
-                    text-align: center;
-                  "
-                >
-                  {{Body}}
-                </p>
-                <!-- CTA Button -->
+              <td align="center" style="padding: 30px 0 40px">
+                <!-- Email Container -->
                 <table
                   role="presentation"
-                  cellspacing="0"
                   cellpadding="0"
+                  cellspacing="0"
                   border="0"
-                  align="center"
-                  style="margin: auto"
+                  width="600"
+                  class="email-container"
+                  style="
+                    max-width: 600px;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    background-color: #15191c;
+                  "
                 >
+                  <!-- Logo -->
+                  <tr>
+                    <td style="background-color: #15191c !important">
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td align="center" style="padding: 30px 0">
+                            <a
+                              href="https://betswap.gg"
+                              target="_blank"
+                              style="text-decoration: none"
+                            >
+                              <img
+                                src="https://betswap-staging.ft-crm.com/media-api/serve/9763c9e6-9f9c-4a9e-8f7c-2debcaab571c_Betswap_Logo_Dark_Transparent.png"
+                                width="200"
+                                alt="Betswap Logo"
+                                style="
+                                  display: block;
+                                  border: 0;
+                                  max-width: 200px;
+                                  height: auto;
+                                "
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- Banner Image -->
+                  <tr>
+                    <td style="background-color: #ffffff">
+                      <a
+                        href="{{Image Destination URL}}"
+                        target="_blank"
+                        style="text-decoration: none"
+                      >
+                        <img
+                          src="{{Choose Image}}"
+                          width="600"
+                          height="auto"
+                          alt=""
+                          class="responsive-banner"
+                          style="
+                            display: block;
+                            border: 0;
+                            width: 100%;
+                            max-width: 600px;
+                            height: auto;
+                            -ms-interpolation-mode: bicubic;
+                            margin: 0 auto;
+                          "
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Content -->
                   <tr>
                     <td
-                      align="center"
-                      bgcolor="#FFD800"
-                      style="border-radius: 22px"
+                      style="padding: 40px 40px 20px; background-color: #15191c"
                     >
-                      <a
-                        href="{{CTA Destination URL}}"
-                        target="_blank"
+                      <h1
                         style="
-                          display: inline-block;
-                          padding: 12px 50px;
+                          margin: 0 0 20px;
                           font-family: 'Open Sans', Arial, sans-serif;
-                          font-size: 16px;
-                          font-weight: 700;
-                          line-height: 20px;
+                          font-size: 22px;
+                          line-height: 30px;
+                          color: #ffd800;
                           text-align: center;
-                          text-decoration: none;
-                          text-transform: uppercase;
-                          color: #15191C;
-                          border-radius: 22px;
                         "
                       >
-                        {{CTA}}
-                      </a>
+                        {{Header}}
+                      </h1>
+                      <p
+                        style="
+                          margin: 0 0 30px;
+                          font-family: 'Open Sans', Arial, sans-serif;
+                          font-size: 16px;
+                          line-height: 24px;
+                          color: #ffffff;
+                          text-align: center;
+                        "
+                      >
+                        {{Body}}
+                      </p>
+                      <!-- CTA Button -->
+                      <table
+                        role="presentation"
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                        align="center"
+                        style="margin: auto"
+                      >
+                        <tr>
+                          <td
+                            align="center"
+                            bgcolor="#FFD800"
+                            style="border-radius: 22px"
+                          >
+                            <a
+                              href="{{CTA Destination URL}}"
+                              target="_blank"
+                              style="
+                                display: inline-block;
+                                padding: 12px 50px;
+                                font-family: 'Open Sans', Arial, sans-serif;
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 20px;
+                                text-align: center;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                color: #15191c;
+                                border-radius: 22px;
+                              "
+                            >
+                              {{CTA}}
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Terms -->
+                      <p
+                        style="
+                          margin: 30px 0 0;
+                          font-family: 'Open Sans', Arial, sans-serif;
+                          font-size: 12px;
+                          line-height: 12px;
+                          color: #ffffff;
+                          text-align: center;
+                        "
+                      >
+                        <a
+                          href="https://betswap.gg/sports-and-casino/terms-and-conditions/"
+                          target="_blank"
+                          style="color: #ffffff; text-decoration: none"
+                        >
+                          Terms and conditions apply
+                        </a>
+                      </p>
                     </td>
                   </tr>
-                </table>
-                <!-- Terms -->
-                <p
-                  style="
-                    margin: 30px 0 0;
-                    font-family: 'Open Sans', Arial, sans-serif;
-                    font-size: 12px;
-                    line-height: 12px;
-                    color: #ffffff;
-                    text-align: center;
-                  "
-                >
-                  <a
-                    href="https://betswap.gg/sports-and-casino/terms-and-conditions/"
-                    target="_blank"
-                    style="color: #ffffff; text-decoration: none"
-                  >
-                    Terms and conditions apply
-                  </a>
-                </p>
-              </td>
-            </tr>
-            <!-- Footer -->
-            <tr>
-              <td style="padding: 30px 40px; background-color: #FFD800">
-                <!-- Social Icons -->
-                <table
-                  role="presentation"
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  width="100%"
-                  style="background-color: #FFD800 !important"
-                >
+                  <!-- Footer -->
                   <tr>
-                    <td align="center" style="padding-bottom: 15px">
-                      <a
-                        href="https://www.facebook.com/trybet/"
-                        target="_blank"
-                        style="display: inline-block; margin: 0 5px"
+                    <td style="padding: 30px 40px; background-color: #ffd800">
+                      <!-- Social Icons -->
+                      <table
+                        role="presentation"
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                        width="100%"
+                        style="background-color: #ffd800 !important"
                       >
-                        <img
-                          src="https://reactivaction.ft-crm.com/media-api/serve/ae0b1328-9d83-4d18-ad31-d3d552d96aa1_social-fb-icon-email-template.png"
-                          width="25"
-                          alt="Facebook"
-                          style="display: block; border: 0"
-                        />
-                      </a>
-                      <a
-                        href="https://www.instagram.com/trybet/"
-                        target="_blank"
-                        style="display: inline-block; margin: 0 5px"
-                      >
-                        <img
-                          src="https://reactivaction.ft-crm.com/media-api/serve/717b9923-5610-4d03-8177-a254fd81a18c_social-ig-icon-email-template.png"
-                          width="25"
-                          alt="Instagram"
-                          style="display: block; border: 0"
-                        />
-                      </a>
-                      <a
-                        href="https://twitter.com/trybet"
-                        target="_blank"
-                        style="display: inline-block; margin: 0 5px"
-                      >
-                        <img
-                          src="https://reactivaction.ft-crm.com/media-api/serve/bd8c55a4-3af0-4bab-ae2b-e6c265297db4_social-x-icon-email-template.png"
-                          width="25"
-                          alt="Twitter"
-                          style="display: block; border: 0"
-                        />
-                      </a>
-                      <a
-                        href="https://www.tiktok.com/@trybet/"
-                        target="_blank"
-                        style="display: inline-block; margin: 0 5px"
-                      >
-                        <img
-                          src="https://reactivaction.ft-crm.com/media-api/serve/8063bc4f-1311-425d-8b34-966d3a7d9764_social-tt-icon-email-template.png"
-                          width="25"
-                          alt="TikTok"
-                          style="display: block; border: 0"
-                        />
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/company/reactivaction/"
-                        target="_blank"
-                        style="display: inline-block; margin: 0 5px"
-                      >
-                        <img
-                          src="https://reactivaction.ft-crm.com/media-api/serve/99d2252b-1ae7-44fc-b832-b2665d138541_social-li-icon-email-template.png"
-                          width="25"
-                          alt="LinkedIn"
-                          style="display: block; border: 0"
-                        />
-                      </a>
-                    </td>
-                  </tr>
-                  <!-- Footer Text -->
-                  <tr>
-                    <td
-                      style="
-                        padding: 0;
-                        font-family: 'Open Sans', Arial, sans-serif;
-                        font-size: 12px;
-                        line-height: 12px;
-                        color: #15191C;
-                        text-align: center;
-                      "
-                    >
-                      <a
-                        href="https://betswap.gg/"
-                        target="_blank"
-                        style="color: #15191C; font-weight: 700; text-decoration: none"
-                      >
-                        betswap.gg
-                      </a>
-                      <br /><br />
-                      Need help? Send an e-mail to
-                      <a
-                        href="mailto:support@betswap.gg"
-                        style="color: #15191C; font-weight: 700; text-decoration: none"
-                      >
-                        support@betswap.gg
-                      </a>
-                      and we'll be happy to assist you.
-                      <br /><br />
-                      If you don't want to receive our special offers and
-                      promotions, you can
-                      <a
-                        href="[UnsubscribeURL]"
-                        style="color: #15191C; font-weight: 700; text-decoration: none"
-                      >
-                        click here
-                      </a>
-                      to unsubscribe.
-                      <br /><br />
-                      Copyright © Betswap - All Rights Reserved.
+                        <tr>
+                          <td align="center" style="padding-bottom: 15px">
+                            <a
+                              href="https://www.facebook.com/betswap/"
+                              target="_blank"
+                              style="display: inline-block; margin: 0 5px"
+                            >
+                              <img
+                                src="https://betswap-staging.ft-crm.com/media-api/serve/b5070cdc-ac2e-49c3-bfc1-6864bf5a0ec6_Betswap_Facebook.png"
+                                width="25"
+                                alt="Facebook"
+                                style="display: block; border: 0"
+                              />
+                            </a>
+                            <a
+                              href="https://www.instagram.com/betswap/"
+                              target="_blank"
+                              style="display: inline-block; margin: 0 5px"
+                            >
+                              <img
+                                src="https://betswap-staging.ft-crm.com/media-api/serve/c87f43d2-9dc8-4892-8ee9-4223f80f242d_Betswap_Instagram.png"
+                                width="25"
+                                alt="Instagram"
+                                style="display: block; border: 0"
+                              />
+                            </a>
+                            <a
+                              href="https://twitter.com/betswap"
+                              target="_blank"
+                              style="display: inline-block; margin: 0 5px"
+                            >
+                              <img
+                                src="https://betswap-staging.ft-crm.com/media-api/serve/7d0ed14c-4438-4804-97d8-ccc111bf7e57_Betswap_Twitter_X.png"
+                                width="25"
+                                alt="Twitter"
+                                style="display: block; border: 0"
+                              />
+                            </a>
+                            <a
+                              href="https://www.youtube.com/@betswap"
+                              target="_blank"
+                              style="display: inline-block; margin: 0 5px"
+                            >
+                              <img
+                                src="https://betswap-staging.ft-crm.com/media-api/serve/ac009e77-875b-4e94-8050-96a880ad10b6_Betswap_Youtube.png"
+                                width="25"
+                                alt="YouTube"
+                                style="display: block; border: 0"
+                              />
+                            </a>
+                            <a
+                              href="https://www.linkedin.com/company/betswap/"
+                              target="_blank"
+                              style="display: inline-block; margin: 0 5px"
+                            >
+                              <img
+                                src="https://betswap-staging.ft-crm.com/media-api/serve/9226d8f2-89a4-4050-b322-2ed2b4bdd831_Betswap_LinkedIn.png"
+                                width="25"
+                                alt="LinkedIn"
+                                style="display: block; border: 0"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                        <!-- Footer Text -->
+                        <tr>
+                          <td
+                            style="
+                              padding: 0;
+                              font-family: 'Open Sans', Arial, sans-serif;
+                              font-size: 12px;
+                              line-height: 12px;
+                              color: #15191c;
+                              text-align: center;
+                            "
+                          >
+                            <a
+                              href="https://betswap.gg/"
+                              target="_blank"
+                              style="
+                                color: #15191c;
+                                font-weight: 700;
+                                text-decoration: none;
+                              "
+                            >
+                              betswap.gg
+                            </a>
+                            <br /><br />
+                            Need help? Send an e-mail to
+                            <a
+                              href="mailto:support@betswap.gg"
+                              style="
+                                color: #15191c;
+                                font-weight: 700;
+                                text-decoration: none;
+                              "
+                            >
+                              support@betswap.gg
+                            </a>
+                            and we'll be happy to assist you.
+                            <br /><br />
+                            If you don't want to receive our special offers and
+                            promotions, you can
+                            <a
+                              href="[UnsubscribeURL]"
+                              style="
+                                color: #15191c;
+                                font-weight: 700;
+                                text-decoration: none;
+                              "
+                            >
+                              click here
+                            </a>
+                            to unsubscribe.
+                            <br /><br />
+                            Copyright © Betswap - All Rights Reserved.
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
